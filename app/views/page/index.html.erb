@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kyle Smith - Junior Dev</title>
+  <link rel="stylesheet" href="./style.css" integrity="sha512-jMSG/1R5zWXi0XHwt/VqsSYD7ZsklprXw4jCYqmG1Nt77sy07KUhe3xhQPXdN8fdChOgZR1+0NuK/hf7uuqIOw">
+  <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Michroma|Trirong&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!-- This component is the header. It is the same on all html docs -->
+    <header class="header">
+      <div class="header-content-left">
+        <h2><a href="./index.html">KYLE SMITH</a></h2>
+      </div>
+      <div class="header-content-right">
+        <h4>Junior Dev.</h4>
+      </div>
+    </header>
+    <!-- This component is the navigation on smaller display sizes < 1600px It is the same on all html docs-->
+    <nav class="nav">
+      <div class="nav-link"><a href="./work.html">work</a></div>
+      <div class="nav-link"><a href="./about.html">about</a></div>
+      <div class="nav-link"><a href="./blog.html">blog</a></div>
+      <div class="nav-link"><a href="./contact.html">contact</a></div>
+    </nav>
+    <!-- This component is the navigation for larger screen sizes and main content area. It is the same on all html docs -->
+    <aside class="outer-grid">
+      <div class="about nav-item">
+        <h1><a href="./about.html">About</a></h1>
+      </div>
+      <div class="blog nav-item">
+        <h1><a href="./blog.html">Blog</a></h1>
+      </div>
+     
+      <div class="work nav-item">
+        <h1><a href="./work.html">Work</a></h1>
+      </div>
+      <div class="contact nav-item">
+        <h1><a href="./contact.html">
+            Contact</a></h1>
+      </div>
+      <main class="content-area">
+
+        <!-- This component is an image displayed with clipped border and matching text path using svg it features on main page and content page. and sort of on about me page as well. -->
+        <div class="image-wrap">
+          <div class="image">
+            <img src="assets/Kyle-Smith-Portrait-cropped.jpg" alt="Kyle Smith Portrait - photographer Farley Morgan">
+            <svg height="0" width="0" viewBox="0 0 100 100">
+              <clipPath id="svgPath" clipPathUnits="objectBoundingBox" transform="scale(0.001666 0.001666)">
+                <path fill="#FFFFFF" stroke="#000000" class="st0" d="M328.8,66.4c-15.1-1.7-36.4-2.7-61.4,1.3c-17.2,2.7-83.3,14.2-130.1,68.6c-28.4,33.1-36,68-51,137.9
+              c-12.5,58.2-16.9,100.4-16.9,112.4c0,34.9,7.6,67.8,28,89.5c13.6,14.5,38.9,41.9,99.3,48.4c53.4,5.7,119.3,10.2,205.9,2.6
+              c56.4-4.9,97.4-20.2,129.4-53.6c65.2-68.1,52.7-200.9-4.6-286.9C462.6,89.1,352.4,69.9,328.8,66.4z" />
+              </clipPath>
+            </svg>
+            <div class="curve-text-div">
+              <svg class="curve-text" viewBox="0 0 600 600" width="auto">
+                <path id="curve" fill="transparent" transform="scale(1.0)"
+                  d="M61,73.8c10.1,41.2,9.7,67.1,2.9,103.3c-1.5,8.2-9,55.9-16.3,88.9c-13.7,61.2-14.5,63.1-19.3,102
+                c-3.5,28.6-5,48.2,2.5,75.5c4.8,17.4,13.2,55.5,47,83c19.2,15.6,37.4,21,62.7,28.1c25.8,7.3,50.1,14,119.6,16.7
+                c43.6,1.7,34.8,5.6,137.9-1.7c54.4-3.9,69.2-7.7,98.7-16.7c38.2-11.6,51.2-25.5,59.5-33.8c12.4-12.4,20.7-24.3,25.4-33.3" />
+                <text width="600" class="textpath-text">
+                  <textPath xlink:href="#curve">
+                    To get in touch with me, click one of these: <a href="./contact.html">&#128579</a> <a href="./contact.html">&#129312</a> <a href="./contact.html">&#128526</a>
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- this component is the content area. it is differnt on every page. sometimes it has some text. sometimes it has a grid display with images as in blog post and work page.  -->
+        <div class="content">
+          <div class="content-heading">
+            <h3>Hello! </h3>
+          </div>
+          <div class="content-main" id="scrollbar-style">
+            <p>My name is Kyle. Welcome to my site which I built with my own two bare hands. </p>
+          </div>
+          <div class="content-footer"></div>
+        </div>
+      </main>
+    </aside>
+    <!-- This component is the footer. It is the same on all html docs -->
+    <footer class="footer">
+      <div class="left-content">
+        <p>&#169 2019 Kyle Smith</p>
+      </div>
+      <div class="right-content">
+        <a href="https://github.com/Kyle46220" class="github"><i class="fab fa-github icon"></i></a>
+        <a href="https://www.linkedin.com/in/kyle-smith-238771ab/?originalSubdomain=au" class="linked-in"><i
+            class="fab fa-linkedin-in icon"></i></a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- <svg height= "0" width="0" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" viewBox="0 0 600 600"  > -->
+
+
+
+  <!-- style="enable-background:new 0 0 600 600;" -->
+  <!-- xml:space="preserve" -->
+
+</body>
+
+</html>
+
+<!-- new text "M32.6,42.5C40.9,46.1,53.3,53,63.3,66c9.3,12.1,13.8,26.2,16.3,53.6c3.4,36.6,0.5,65.3-0.7,75.8
+	c-4.9,45.1-10,68.1-20.3,138.6c-4.4,30-6,43.6-4.6,62.7c0.8,10.1,3.2,42.7,17,68.6c25.7,48.2,84.6,62.5,127.5,72.9
+  c26,6.3,70.6,6.6,158.8,6.8c89.7,0.3,110.6-1.5,138.6-11.8c24.1-8.9,71.6-27.1,86.3-70.6c4.9-14.4,4.8-27.6,3.9-36.6" -->
+
+
+<!-- new clip d="M93.3,205.7c-7.9,31.3-2.1,27.1-15.8,122.6c-3.7,26-6.2,40.6-4.6,62.7c0.9,11.8,3.2,43.8,17,68.6
+	c25.3,45.7,83.4,57.4,132.2,67.1c14.2,2.8,18.6,2.9,155.6,3.3c60.1,0.2,90.9,0,123.5-13.7c16.9-7.1,51.7-24.1,66.7-58.8
+	c14.9-34.6-5.2-52.4-16.5-129.4c-12-81.9,5.7-96.4-14.9-147.1c-5.5-13.6-22.4-50.8-60.1-82.4c-49.7-41.5-104.8-47.4-136.6-50.3
+  c-29.5-2.7-143.7-13.3-204.6,58.8C111,135.8,102.7,168.6,93.3,205.7z" -->
+
+<!-- old text d="M34.5,24.2c11.9,29.8,27.3,77.1,32,136.6c5.8,73.2-10.8,89.5-2.6,160.8c4.7,41.5,12.7,103.8,58.2,160.1
+            c30.3,37.4,64.3,56.4,78.4,64.1c48.1,26.1,90.9,30.3,148.4,35.9c36.6,3.6,67.3,6.6,108.5,0c44.8-7.2,79.7-22.1,102.2-33.7" -->
+
+<!-- old clip d="M158.1,75.8c-10.7,6.5-31.6,21-47.7,46.4c-24.2,37.9-23.2,77.1-19,138.6c8.1,116.6,23.3,174.3,34,190.8
+          c49.4,76.5,155.1,113.1,239.2,79.1c40-16.2,65.8-45.5,80.4-62.1c42.9-48.8,56.3-100.1,62.7-126.1c13.1-52.7,30.6-123.2-5.9-185
+          c-41.9-71.1-128.2-84.8-202.6-96.7C209.1,46.4,167.4,70.1,158.1,75.8z" -->

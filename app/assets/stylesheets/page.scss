@@ -1,0 +1,281 @@
+// Place all the styles related to the Page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* This is the css for the main page content area, as well as the full size display navigation. also all media queries are here.  */
+
+@import "./header.css";
+@import "./footer.css";
+@import "./main-nav.css";
+@import "./content.css";
+@import "./ipad.css";
+@import "./form.css";
+@import "./work.css";
+@import "./blogpost.css";
+@import "./about.css";
+:root {
+  --dark-slate-gray: #314d55;
+  --golden-rod: #dccf39;
+  --wheat: #f5c8c7;
+  --brick-red: #db3e42;
+  --medium-sea-green: #39be63;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav {
+  display: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--brick-red);
+}
+
+h1 {
+  font-family: 'Michroma', sans-serif;
+  /* font-family: 'Trirong', serif;
+  font-family: 'Alike Angular', serif; */
+  color: var(--golden-rod);
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  /* padding:0; */
+}
+
+.outer-grid {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 160px 1fr 1fr 1fr 1fr 1fr 160px;
+  grid-template-columns: 160px 1fr 1fr 1fr 180px;
+  /* background-image: linear-gradient(#814B9D,#C11A7F,#425EAC); */
+  background-image: linear-gradient(#B2C4D7, #B8C8E2, #E8F1F3);
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+  box-sizing: border-box;
+}
+
+.content-area {
+  grid-row: 2/7;
+  grid-column: 2/5;
+  background: var(--wheat);
+  z-index: 0;
+}
+
+.about {
+  grid-row: 1/2;
+  grid-column: 2/5;
+}
+
+.blog {
+  grid-row: 2/7;
+  grid-column: 5/6;
+}
+
+.work {
+  grid-row: 2/7;
+  grid-column: 1/2;
+}
+
+/* .skills {
+  grid-row: 2/7;
+  grid-column: 1/2;
+} */
+
+.contact {
+  grid-row: 7/8;
+  grid-column: 2/5;
+}
+
+@media only screen and (max-width: 1600px) {
+  .image-wrap {
+    padding: 50px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+  }
+  .nav-item {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 5vw;
+    font-family: 'Michroma', sans-serif;
+    color: var(--brick-red);
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    /* height: 10vw; */
+  }
+  .outer-grid {
+    /* height: calc(100% - 60px); */
+    padding: 10vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 50px;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: linear-gradient(#B2C4D7, #B8C8E2, #E8F1F3, white);
+  }
+  .content-area {
+    margin-top: 60px;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+  .image {
+    height: auto;
+    /* min-height: 50%; */
+    overflow-y: visible;
+  }
+  .projects-grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* ######## */
+  body {
+    height: 100%;
+  }
+  .page-wrapper {
+    height: 100%;
+  }
+  .outer-grid {
+    height: 100%;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    margin-bottom: 60px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .about-heading {
+    height: 35px;
+  }
+  .about-image img {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .blog {
+    grid-row: 1/2;
+    grid-column: 4/5;
+    transform: none;
+  }
+  .work {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    transform: none;
+  }
+  .content-area {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+ 
+  .foot-content-left {
+    font-size: 20px;
+  }
+  .content {
+    font-size: 26px;
+    padding: 5vw;
+  }
+  .content-heading h3 {
+    font-size: 36px;
+  }
+  .content-main {
+    font-size: 26px;
+  }
+  .about-wrap {
+    font-size: 20px;
+  }
+  .about-image img {
+    float: none;
+  }
+  .about-heading {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-height: 1150px) {
+  body {
+    height: 100%;
+  }
+  .page-wrapper {
+    height: 100%;
+  }
+  .outer-grid {
+    height: 100%;
+    display: flex;
+    padding: 10vw;
+  }
+  .nav-item {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 5vw;
+    font-family: 'Michroma', sans-serif;
+    color: var(--brick-red);
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    /* height: 10vw; */
+  }
+  .content-area {
+    width: 100%;
+  }
+  /* ############   */
+}
+
+@media only screen and (max-width: 470px) {
+  .header {
+    font-size: 8vw;
+  }
+  .header-content-right {
+    display: none;
+  }
+  .header-content-left {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .footer .left-content  p{
+    font-size: 7vw;
+  }
+}

@@ -1,0 +1,112 @@
+/* this is the css that displays the component with clipped image and text path  */
+
+.content h3 {
+  font-size: 5vw;
+  color:var(--brick-red);
+  font-family: 'Michroma', sans-serif;
+  padding-bottom: 15px;
+  font-family: 'Alike Angular', serif;
+  letter-spacing: 7px;
+  margin: 0;
+}
+
+.image {
+  /* height: 100%; */
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+  /* display: flex; 
+  align-items: center; */
+  padding-top: auto;
+  padding-bottom: auto;
+  box-sizing: border-box;
+  display: block;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  clip-path: url(#svgPath);
+
+}
+
+/* 
+.svgPath {
+  height: auto;
+  
+} */
+
+.content-area {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Trirong', serif;
+  font-size: 40px;
+  line-height: 1.5;
+  color:  var(--dark-slate-gray);
+  font-weight: 600;
+  /* border: solid 5px var(--brick-red); */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 60px;
+  min-width: 33%;
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+.content-main {
+  font-size: 3vw;
+  box-sizing: border-box;
+  padding-right: 10%;
+  overflow-y: auto;
+  line-height: 143%;
+  letter-spacing: 3px;
+  
+}
+
+#scrollbar-style::-webkit-scrollbar {
+  background-color: blue;
+}
+#scrollbar-style::-webkit-scrollbar-thumb {
+  background-color: var(--brick-red);
+  width: 20px;
+}
+
+.curve-text-div {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.textpath-text {
+  font-family: 'Trirong', serif;
+}
+
+.curve-text text {
+  fill: var(--medium-sea-green);
+  transform: translate(-5px, 5px);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.image-wrap {
+  /* width: 100%; */
+  height: 100%;
+  /* float:left; */
+  padding: 3vw;
+    box-sizing: border-box;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

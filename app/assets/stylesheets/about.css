@@ -1,0 +1,39 @@
+.about-wrap {
+  height: 100%;
+  overflow-y: auto;
+  padding: 3vw;
+  box-sizing: border-box;
+  font-size: 2vw;
+}
+
+
+
+.about-image img {
+  height: 30vw;
+  width: auto;
+  float: right;
+  clip-path: url(#about-svgPath);
+}
+
+.about-heading {
+  font-size: 2vw;
+  fill: var(--brick-red);
+  font-family: 'Alike Angular', serif;
+  /* position: relative; */
+  height: 20%;
+  overflow: visible;
+}
+
+.about-textpath-text text{
+  
+  
+  font-family: 'Alike Angular', serif;
+}
+
+.about-curve-text {
+  /* padding-bottom: 5%;
+  padding-top:5%; */
+  width: 100%;
+  overflow: visible;
+}
+

@@ -1,0 +1,20 @@
+.blog-post-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100%;
+  padding: 3vw;
+  box-sizing: border-box;
+  /* width:100%; */
+  font-size: 3vw;
+}
+.blog-post-wrapper h3 {
+  color: var(--brick-red);
+  font-family: 'Alike Angular', serif;
+  
+}
+
+.blog-image {
+  width: 80%;
+  height: auto;
+}

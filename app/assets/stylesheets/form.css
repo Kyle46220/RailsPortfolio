@@ -1,0 +1,114 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  font-size: 20px;
+  height: 60%;
+  width: 100%;
+}
+
+.label-name {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+.name-input {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+.label-email {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  
+}
+.email-input {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.label-message {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+.message-input {
+  grid-row: 3/4;
+  grid-column: 2/3;
+
+}
+
+.submit-button {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+/* .content-area {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+} */
+
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-end; */
+  height: 100%;
+  width: 100%;
+}
+
+.form-heading {
+  text-align: right;
+}
+.form-text {
+  padding-top: 1vw;
+  text-align: right;
+}
+
+.form-input {
+  width: 100%;
+  
+}
+
+.form-item-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.input-box input {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input-box {}
+
+#submit-button {
+  padding: 1vw;
+}
+
+#message {
+  height: 10vh;
+}
+
+.submit-button {
+  justify-content: center;
+}
+.image-wrap-wrap {
+  /* height: 100%;
+  width: 80%;
+   */
+   /* padding: 2vw;
+   box-sizing: border-box; */
+} 
